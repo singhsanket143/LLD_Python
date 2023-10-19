@@ -1,0 +1,5 @@
+Proxy Behavior:
+The essence of the proxy pattern is evident in the display method. Instead of always loading the image immediately upon creating an instance (which would be the behavior if you directly used the RealImage class), the ProxyImage class delays this loading until the image is actually requested for display. This can save resources, especially when dealing with large images or when there's a possibility that not all images will be viewed.
+
+In Summary:
+The ProxyImage class acts as an intermediary or a "proxy" for the RealImage class. It controls when the real image is loaded and displayed, providing a layer of indirection and allowing for optimizations like lazy loading. This encapsulation of the behavior makes the client code simpler and more efficient, as it doesn't need to manage the loading state of the image directly.
